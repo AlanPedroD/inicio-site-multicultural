@@ -39,21 +39,6 @@ section h3 {
   color: #5a2ca0;
 }
 
-/* HERO */
-/* .hero {
-  min-height: 100vh;
-  width: 100%;
-  max-width: 1920px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-  background: linear-gradient(rgba(90,44,160,0.7), rgba(90,44,160,0.7)),
-              url(../imagens/cultura-01.jpg) center/cover;
-  color: #fff;
-} */
-
 .hero {
   min-height: 100vh;
   width: 100%;
@@ -131,6 +116,28 @@ footer {
   padding: 1.5rem;
   margin-top: 2rem;
 }
+
+.whatsapp{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 999;
+  text-decoration: none;
+  transition: .3s;
+}
+.whatsapp:hover{ transform: scale(1.05); }
+.whatsapp .fa-whatsapp{ font-size: 26px; color: #fff; line-height: 1; }
+
+
+
 
 /* RESPONSIVE */
 @media (min-width: 768px) {
