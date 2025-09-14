@@ -1,0 +1,140 @@
+/* RESET */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fafafa;
+}
+a {text-decoration: none; color: inherit;}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+header h1 {font-size: 1.2rem; font-weight: 700; color: #5a2ca0;}
+nav ul {display: flex; gap: 1.5rem; list-style: none;}
+nav a {font-weight: 600; transition: color .3s;}
+nav a:hover {color: #5a2ca0;}
+
+/* SECTIONS */
+section {
+  padding: 5rem 2rem;
+  max-width: 1140px;
+  margin: auto;
+}
+section h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #5a2ca0;
+}
+
+/* HERO */
+/* .hero {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(rgba(90,44,160,0.7), rgba(90,44,160,0.7)),
+              url(../imagens/cultura-01.jpg) center/cover;
+  color: #fff;
+} */
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  transition: background-image 1s ease-in-out;
+}
+
+
+
+.hero h2 {font-size: 2.5rem; margin-bottom: 1rem;}
+.hero p {max-width: 600px; margin: 0 auto 2rem;}
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  background: #ffcc00;
+  color: #333;
+  font-weight: 600;
+  transition: background .3s;
+}
+.btn:hover {background: #e6b800;}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+.about, .mission, .join {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* FORM */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background: #5a2ca0;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .3s;
+}
+button:hover {background: #4b2386;}
+
+/* FOOTER */
+footer {
+  background: #5a2ca0;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .grid-2 {grid-template-columns: repeat(2, 1fr);}
+  .grid-3 {grid-template-columns: repeat(3, 1fr);}
+  .hero h2 {font-size: 3.5rem;}
+}
